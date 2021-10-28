@@ -1,0 +1,71 @@
+{
+  "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+  "CreationDate": "2021-10-28T10:59:58.121-00:00",
+  "Sources": [
+    {
+      "Packages": [
+        {
+          "PackageIdentifier": "7zip.7zip"
+        },
+        {
+          "PackageIdentifier": "CodecGuide.K-LiteCodecPack.Full"
+        },
+        {
+          "PackageIdentifier": "CodeSector.TeraCopy"
+        },
+        {
+          "PackageIdentifier": "Foxit.FoxitReader"
+        },
+        {
+          "PackageIdentifier": "Git.Git"
+        },
+        {
+          "PackageIdentifier": "Glarysoft.GlaryUtilities"
+        },
+        {
+          "PackageIdentifier": "Google.Chrome"
+        },
+        {
+          "PackageIdentifier": "Google.Drive"
+        },
+        {
+          "PackageIdentifier": "Microsoft.OneDrive"
+        },
+        {
+          "PackageIdentifier": "Microsoft.PowerShell"
+        },
+        {
+          "PackageIdentifier": "Microsoft.PowerToys"
+        },
+        {
+          "PackageIdentifier": "Microsoft.SysInternals"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VisualStudioCode"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WindowsPCHealthCheck"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WindowsTerminal"
+        },
+        {
+          "PackageIdentifier": "Python.Python.3"
+        },
+        {
+          "PackageIdentifier": "REALiX.HWiNFO"
+        },
+        {
+          "PackageIdentifier": "WinMerge.WinMerge"
+        }
+      ],
+      "SourceDetails": {
+        "Argument": "https://winget.azureedge.net/cache",
+        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+        "Name": "winget",
+        "Type": "Microsoft.PreIndexed.Package"
+      }
+    }
+  ],
+  "WinGetVersion": "1.1.12701"
+}
