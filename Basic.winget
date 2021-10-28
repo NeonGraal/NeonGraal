@@ -14,10 +14,16 @@
           "PackageIdentifier": "CodeSector.TeraCopy"
         },
         {
+          "PackageIdentifier": "Fork.Fork"
+        },
+        {
           "PackageIdentifier": "Foxit.FoxitReader"
         },
         {
           "PackageIdentifier": "Git.Git"
+        },
+        {
+          "PackageIdentifier": "GitHub.cli"
         },
         {
           "PackageIdentifier": "Glarysoft.GlaryUtilities"
@@ -29,6 +35,9 @@
           "PackageIdentifier": "Google.Drive"
         },
         {
+          "PackageIdentifier": "JanDeDobbeleer.OhMyPosh"
+        },
+        {
           "PackageIdentifier": "Microsoft.OneDrive"
         },
         {
@@ -36,9 +45,6 @@
         },
         {
           "PackageIdentifier": "Microsoft.PowerToys"
-        },
-        {
-          "PackageIdentifier": "Microsoft.SysInternals"
         },
         {
           "PackageIdentifier": "Microsoft.VisualStudioCode"
@@ -64,6 +70,22 @@
         "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
         "Name": "winget",
         "Type": "Microsoft.PreIndexed.Package"
+      }
+    },
+    {
+      "Packages": [
+        {
+          "PackageIdentifier": "9WZDNCRFJ3QK"
+        },
+        {
+          "PackageIdentifier": "9P7KNL5RWT25"
+        }
+      ],
+      "SourceDetails": {
+        "Argument": "https://storeedgefd.dsx.mp.microsoft.com/v9.0",
+        "Identifier": "StoreEdgeFD",
+        "Name": "msstore",
+        "Type": "Microsoft.Rest"
       }
     }
   ],
