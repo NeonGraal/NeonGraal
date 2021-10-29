@@ -62,6 +62,9 @@
           "PackageIdentifier": "REALiX.HWiNFO"
         },
         {
+          "PackageIdentifier": "Twilio.Authy"
+        },
+        {
           "PackageIdentifier": "WinMerge.WinMerge"
         }
       ],
@@ -75,10 +78,16 @@
     {
       "Packages": [
         {
+          "Name": "LastPass for Windows Desktop",
           "PackageIdentifier": "9WZDNCRFJ3QK"
         },
         {
+          "Name": "Sysinternals Suite",
           "PackageIdentifier": "9P7KNL5RWT25"
+        },
+        {
+          "Name": "TreeSize Free",
+          "PackageIdentifier": "9NBLGGH40881"
         }
       ],
       "SourceDetails": {

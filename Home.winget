@@ -1,0 +1,50 @@
+{
+	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
+	"CreationDate" : "2021-10-29T17:18:12.494-00:00",
+	"Sources" : 
+	[
+		{
+			"Packages" : 
+			[
+				{
+					"PackageIdentifier" : "GIMP.GIMP"
+				},
+				{
+					"PackageIdentifier" : "Plex.Plex"
+				},
+				{
+					"PackageIdentifier" : "Inkscape.Inkscape"
+				},
+				{
+					"PackageIdentifier" : "calibre.calibre"
+				}
+			],
+			"SourceDetails" : 
+			{
+				"Argument" : "https://winget.azureedge.net/cache",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			}
+		},
+		{
+		  "Packages": [
+			{
+			  "Name": "Amazon Prime Video for Windows",
+			  "PackageIdentifier": "9P6RC76MSMMJ"
+			},
+			{
+			  "Name": "Netflix",
+			  "PackageIdentifier": "9WZDNCRFJ3TJ"
+			}
+		  ],
+		  "SourceDetails": {
+			"Argument": "https://storeedgefd.dsx.mp.microsoft.com/v9.0",
+			"Identifier": "StoreEdgeFD",
+			"Name": "msstore",
+			"Type": "Microsoft.Rest"
+		  }
+			}
+	],
+	"WinGetVersion" : "1.1.12702"
+}
