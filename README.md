@@ -1,16 +1,17 @@
 # Welcome
 
 I'm _still_ a work in progress but I have been at one time or another and may even be still:
+
 * A Delphi expert
 * A Roleplayer
-* A Medieval r-eenactor
+* A Medieval re-enactor
 * A Husband
 * A Computer scientist
 * A Student
 * A Mentor
 * A Sailor
 * A Swimmer
-* An enthusistic Audience member
+* An enthusiastic Audience member
 * A Science fiction fan
 * A Fantasy fan
 * A Reader
@@ -33,7 +34,7 @@ I'm _still_ a work in progress but I have been at one time or another and may ev
 # Daily DevCard
 <a href="https://app.daily.dev/NeonGraal"><img src="https://api.daily.dev/devcards/ed37a086f7e54580ab0d0a1882c76368.png?r=p0b" width="400" alt="Struan Judd's Dev Card"/></a>
 
-#DevCard
+# DevCard
 [NeonGraal](https://devcard.link/XOanrc)
 <!--
 **NeonGraal/NeonGraal** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
