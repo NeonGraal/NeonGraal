@@ -1,0 +1,1 @@
+struan  ALL=(ALL) NOPASSWD:ALL
