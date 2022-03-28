@@ -13,11 +13,17 @@
 					"PackageIdentifier" : "Discord.Discord"
 				},
 				{
-					"PackageIdentifier" : "Valve.Steam"
+					"PackageIdentifier" : "ElectronicArts.EADesktop"
 				},
 				{
 					"PackageIdentifier" : "EpicGames.EpicGamesLauncher"
 				},
+				{
+					"PackageIdentifier" : "Ubisoft.Connect"
+				},
+				{
+					"PackageIdentifier" : "Valve.Steam"
+				}
 			],
 			"SourceDetails" : 
 			{

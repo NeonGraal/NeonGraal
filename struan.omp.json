@@ -7,26 +7,22 @@
         {
           "foreground": "#ffffff",
           "properties": {
-            "style": "full",
-            "template": "{{ .Path }} "
+            "style": "full"
           },
           "style": "plain",
+          "template": "{{ .Path }} ",
           "type": "path"
         },
         {
           "foreground": "#C2C206",
-          "properties": {
-            "template": "{{ .Status }} "
-          },
           "style": "plain",
+          "template": "{{ .Status }} ",
           "type": "poshgit"
         },
         {
           "foreground": "#B5B50D",
-          "properties": {
-            "template": " \uf0e7 "
-          },
           "style": "plain",
+          "template": " \uf0e7 ",
           "type": "root"
         }
       ],
@@ -44,20 +40,20 @@
           "properties": {
             "charged_icon": "\ue22f ",
             "charging_icon": "\ue234 ",
-            "discharging_icon": "\ue231 ",
-            "template": " {{ if not .Error }}{{.Icon}}{{.Percentage}}{{ end }}\uf295 "
+            "discharging_icon": "\ue231 "
           },
           "style": "plain",
+          "template": " {{ if not .Error }}{{.Icon}}{{.Percentage}}{{ end }}\uf295 ",
           "type": "battery"
         },
         {
           "foreground": "#8800dd",
           "properties": {
             "style": "round",
-            "template": " <#fefefe>\ufbab</> {{ .FormattedMs }} ",
             "threshold": 500
           },
           "style": "plain",
+          "template": " <#fefefe>\ufbab</> {{ .FormattedMs }} ",
           "type": "executiontime"
         },
         {
@@ -74,10 +70,8 @@
       "segments": [
         {
           "foreground": "#007ACC",
-          "properties": {
-            "template": "\ue602 "
-          },
           "style": "plain",
+          "template": "\ue602 ",
           "type": "text"
         }
       ],
@@ -85,5 +79,5 @@
     }
   ],
   "final_space": true,
-  "version": 1
+  "version": 2
 }
