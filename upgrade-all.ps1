@@ -1,13 +1,17 @@
 Write-Host "* WSL" -ForegroundColor Blue
-wsl sudo apt update
-wsl sudo apt dist-upgrade
-wsl sudo apt autoremove
+wsa update
+wsau
+wsa autoremove
 
 Write-Host "* Powershell" -ForegroundColor Blue
-Update-Module
+$modules = @(Get-InstalledModule | Where-Object { $_.RepositorySourceLocation -ne $_.Repository } | Select-Object -ExpandProperty Name)
+Update-Module $modules
 
-Write-Host "* Dotnet Tools" -ForegroundColor Blue
-dotnet tools-outdated
+Write-Host "* Dotnet Tools (dntu) " -ForegroundColor Blue
+dn tools-outdated
 
-Write-Host "* Winget" -ForegroundColor Blue
-winget upgrade
+Write-Host "* Winget (wgu)" -ForegroundColor Blue
+wgu
+
+Write-Host "* WSL (wsau)" -ForegroundColor Blue
+wsau

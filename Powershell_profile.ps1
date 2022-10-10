@@ -17,18 +17,35 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
 }
 
 function Update-ViaWinget() {
-  winget upgrade $args
+    winget upgrade $args
 }
 
+function Invoke-WslSudoApt() {
+    wsl sudo apt -y $args
+}
+
+function Update-ViaWslSudoApt() {
+    wsl sudo apt -y dist-upgrade $args
+}
+
+function Update-ViaDotnetTool() {
+    dotnet tool update -g $args
+}
+
+# ~/bin/docker
 function Use-Compose() {
     docker compose $args
 }
 
 Set-Alias d docker
 Set-Alias dc Use-Compose
+Set-Alias g git.exe
 Set-Alias dn dotnet
-Set-Alias g git
-Set-Alias wu Update-ViaWinget
+Set-Alias wg winget
+Set-Alias wsa Invoke-WslSudoApt
+Set-Alias dntu Update-ViaDotnetTool
+Set-Alias wgu Update-ViaWinget
+Set-Alias wsau Update-ViaWslSudoApt
 Set-Alias uz Update-ZLocation
 Set-Alias rz Remove-ZLocation
 
