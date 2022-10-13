@@ -21,11 +21,11 @@ function Update-ViaWinget() {
 }
 
 function Invoke-WslSudoApt() {
-    wsl sudo apt -y $args
+    wsl sudo apt-get -y $args
 }
 
 function Update-ViaWslSudoApt() {
-    wsl sudo apt -y dist-upgrade $args
+    wsl sudo apt-get -y dist-upgrade $args
 }
 
 function Update-ViaDotnetTool() {
