@@ -20,8 +20,12 @@ function Update-ViaWinget() {
     winget upgrade $args
 }
 
+function Invoke-WslSudo() {
+    wsl sudo @args
+}
+
 function Invoke-WslSudoApt() {
-    wsl sudo apt-get -y $args
+    Invoke-WslSudo apt -y @args
 }
 
 function Update-ViaWslSudoApt() {
@@ -42,6 +46,7 @@ Set-Alias dc Use-Compose
 Set-Alias g git.exe
 Set-Alias dn dotnet
 Set-Alias wg winget
+Set-Alias ws Invoke-WslSudo
 Set-Alias wsa Invoke-WslSudoApt
 Set-Alias dntu Update-ViaDotnetTool
 Set-Alias wgu Update-ViaWinget
@@ -49,10 +54,14 @@ Set-Alias wsau Update-ViaWslSudoApt
 Set-Alias uz Update-ZLocation
 Set-Alias rz Remove-ZLocation
 
+function Start-Admin() {
+    Start-Process pwsh.exe @('-C', $args) -Verb RunAs
+}
+
 function Use-Admin($service, [switch]$Stop = $false) {
-    $action = "Start-Service"
+    $action = 'Start-Service'
     if ($Stop) {
-        $action = "Stop-Service"
+        $action = 'Stop-Service'
     }
-    Start-Process pwsh.exe "-C",$action,$service -Verb RunAs
+    Start-Admin $action $service
 }
