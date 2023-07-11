@@ -55,7 +55,7 @@ Set-Alias uz Update-ZLocation
 Set-Alias rz Remove-ZLocation
 
 function Start-Admin() {
-    $params = @('-C') + $args
+    $params = @('-NOE', '-C') + $args
     Start-Process pwsh.exe $params -Verb RunAs
 }
 
