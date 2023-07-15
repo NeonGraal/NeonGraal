@@ -1,0 +1,230 @@
+{
+	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
+	"CreationDate" : "2023-07-15T15:08:09.606-00:00",
+	"Sources" : 
+	[
+		{
+			"Packages" : 
+			[
+				{
+					"PackageIdentifier" : "Blitz.Blitz"
+				},
+				{
+					"PackageIdentifier" : "7zip.7zip"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VisualStudio.2022.Community"
+				},
+				{
+					"PackageIdentifier" : "Discord.Discord"
+				},
+				{
+					"PackageIdentifier" : "Fork.Fork"
+				},
+				{
+					"PackageIdentifier" : "Foxit.FoxitReader"
+				},
+				{
+					"PackageIdentifier" : "GIMP.GIMP"
+				},
+				{
+					"PackageIdentifier" : "Git.Git"
+				},
+				{
+					"PackageIdentifier" : "Glarysoft.GlaryUtilities"
+				},
+				{
+					"PackageIdentifier" : "Graphviz.Graphviz"
+				},
+				{
+					"PackageIdentifier" : "REALiX.HWiNFO"
+				},
+				{
+					"PackageIdentifier" : "CodecGuide.K-LiteCodecPack.Full"
+				},
+				{
+					"PackageIdentifier" : "Kobo.Kobo"
+				},
+				{
+					"PackageIdentifier" : "KirillOsenkov.MSBuildStructuredLogViewer"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Edge"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.EdgeWebView2Runtime"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsTerminal"
+				},
+				{
+					"PackageIdentifier" : "Insecure.Nmap"
+				},
+				{
+					"PackageIdentifier" : "JanDeDobbeleer.OhMyPosh"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.OneDrive"
+				},
+				{
+					"PackageIdentifier" : "Plex.Plex"
+				},
+				{
+					"PackageIdentifier" : "Rustlang.Rustup"
+				},
+				{
+					"PackageIdentifier" : "Valve.Steam"
+				},
+				{
+					"PackageIdentifier" : "SteelSeries.GG"
+				},
+				{
+					"PackageIdentifier" : "Ubisoft.Connect"
+				},
+				{
+					"PackageIdentifier" : "WinMerge.WinMerge"
+				},
+				{
+					"PackageIdentifier" : "Zoom.Zoom"
+				},
+				{
+					"PackageIdentifier" : "Twilio.Authy"
+				},
+				{
+					"PackageIdentifier" : "Balena.Etcher"
+				},
+				{
+					"PackageIdentifier" : "KDE.digikam"
+				},
+				{
+					"PackageIdentifier" : "SlackTechnologies.Slack"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2013.x64"
+				},
+				{
+					"PackageIdentifier" : "jasongin.nvs"
+				},
+				{
+					"PackageIdentifier" : "tailscale.tailscale"
+				},
+				{
+					"PackageIdentifier" : "RedHat.Podman"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2010.x64"
+				},
+				{
+					"PackageIdentifier" : "calibre.calibre"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2012.x86"
+				},
+				{
+					"PackageIdentifier" : "EpicGames.EpicGamesLauncher"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.6"
+				},
+				{
+					"PackageIdentifier" : "Terrastruct.D2"
+				},
+				{
+					"PackageIdentifier" : "CodeSector.TeraCopy"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerShell"
+				},
+				{
+					"PackageIdentifier" : "GitHub.cli"
+				},
+				{
+					"PackageIdentifier" : "Gephi.Gephi"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.CLRTypesSQLServer.2019"
+				},
+				{
+					"PackageIdentifier" : "Google.Drive"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VisualStudioCode"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsPCHealthCheck"
+				},
+				{
+					"PackageIdentifier" : "GoLang.Go"
+				},
+				{
+					"PackageIdentifier" : "ElectronicArts.EADesktop"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.6"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.AspNetCore.6"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2008.x86"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2013.x86"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.SDK.7"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WebDeploy"
+				},
+				{
+					"PackageIdentifier" : "Nvidia.GeForceExperience"
+				},
+				{
+					"PackageIdentifier" : "Nvidia.PhysX"
+				},
+				{
+					"PackageIdentifier" : "Nvidia.Broadcast"
+				},
+				{
+					"PackageIdentifier" : "Inkscape.Inkscape"
+				},
+				{
+					"PackageIdentifier" : "Google.Chrome"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.UpdateAssistant"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.OpenJDK.11"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2010.x86"
+				},
+				{
+					"PackageIdentifier" : "Python.Python.3.10"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerToys"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsSDK.10.0.22621"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2012.x64"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.AspNetCore.6"
+				}
+			],
+			"SourceDetails" : 
+			{
+				"Argument" : "https://cdn.winget.microsoft.com/cache",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			}
+		}
+	],
+	"WinGetVersion" : "1.6.1573-preview"
+}

@@ -50,9 +50,6 @@
           "PackageIdentifier": "Microsoft.VisualStudioCode"
         },
         {
-          "PackageIdentifier": "Microsoft.WindowsPCHealthCheck"
-        },
-        {
           "PackageIdentifier": "Microsoft.WindowsTerminal"
         },
         {

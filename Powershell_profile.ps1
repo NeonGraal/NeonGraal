@@ -17,7 +17,23 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
 }
 
 function Update-ViaWinget() {
-    winget upgrade $args
+    winget upgrade @args
+}
+
+function Invoke-SshDresden() {
+    ssh struan@dresden-u @args
+}
+
+function Invoke-SshDresdenSudo() {
+    Invoke-SshDresden sudo @args
+}
+
+function Invoke-SshDresdenSudoApt() {
+    Invoke-SshDresden sudo apt-get -y @args
+}
+
+function Update-ViaSshDresdenSudoApt() {
+    Invoke-SshDresdenSudoApt dist-upgrade @args
 }
 
 function Invoke-WslSudo() {
@@ -25,20 +41,20 @@ function Invoke-WslSudo() {
 }
 
 function Invoke-WslSudoApt() {
-    Invoke-WslSudo apt -y @args
+    Invoke-WslSudo apt-get -y @args
 }
 
 function Update-ViaWslSudoApt() {
-    wsl sudo apt-get -y dist-upgrade $args
+    Invoke-WslSudoApt dist-upgrade @args
 }
 
 function Update-ViaDotnetTool() {
-    dotnet tool update -g $args
+    dotnet tool update -g @args
 }
 
 # ~/bin/docker
 function Use-Compose() {
-    docker compose $args
+    docker compose @args
 }
 
 Set-Alias d docker
@@ -48,9 +64,13 @@ Set-Alias dn dotnet
 Set-Alias wg winget
 Set-Alias ws Invoke-WslSudo
 Set-Alias wsa Invoke-WslSudoApt
-Set-Alias dntu Update-ViaDotnetTool
-Set-Alias wgu Update-ViaWinget
 Set-Alias wsau Update-ViaWslSudoApt
+Set-Alias dntu Update-ViaDotnetTool
+Set-Alias sd Invoke-SshDresden
+Set-Alias sds Invoke-SshDresdenSudo
+Set-Alias sdsa Invoke-SshDresdenSudoApt
+Set-Alias sdsau Update-ViaSshDresdenSudoApt
+Set-Alias wgu Update-ViaWinget
 Set-Alias uz Update-ZLocation
 Set-Alias rz Remove-ZLocation
 
