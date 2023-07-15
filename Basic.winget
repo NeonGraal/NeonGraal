@@ -20,16 +20,10 @@
           "PackageIdentifier": "Foxit.FoxitReader"
         },
         {
-          "PackageIdentifier": "Git.Git"
-        },
-        {
           "PackageIdentifier": "GitHub.cli"
         },
         {
           "PackageIdentifier": "Glarysoft.GlaryUtilities"
-        },
-        {
-          "PackageIdentifier": "Google.Chrome"
         },
         {
           "PackageIdentifier": "Google.Drive"
@@ -57,9 +51,6 @@
         },
         {
           "PackageIdentifier": "REALiX.HWiNFO"
-        },
-        {
-          "PackageIdentifier": "Twilio.Authy"
         },
         {
           "PackageIdentifier": "WinMerge.WinMerge"
