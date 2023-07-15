@@ -7,28 +7,16 @@
 			"Packages" : 
 			[
 				{
-					"PackageIdentifier" : "Graphviz.Graphviz"
+					"PackageIdentifier" : "Github.Cli"
 				},
 				{
-					"PackageIdentifier" : "GoLang.Go"
+					"PackageIdentifier" : "Google.Chrome"
 				},
 				{
-					"PackageIdentifier" : "Insecure.Nmap"
+					"PackageIdentifier" : "Microsoft.Powershell"
 				},
 				{
-					"PackageIdentifier" : "KirillOsenkov.MSBuildStructuredLogViewer"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VisualStudio.2022.Community"
-				},
-				{
-					"PackageIdentifier" : "Rustlang.Rustup"
-				},
-				{
-					"PackageIdentifier" : "SlackTechnologies.Slack"
-				},
-				{
-					"PackageIdentifier" : "Terrastruct.D2"
+					"PackageIdentifier" : "Twilio.Authy"
 				}
 			],
 			"SourceDetails" : 

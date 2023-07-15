@@ -47,6 +47,9 @@
           "PackageIdentifier": "REALiX.HWiNFO"
         },
         {
+          "PackageIdentifier": "tailscale.tailscale"
+        },
+        {
           "PackageIdentifier": "WinMerge.WinMerge"
         }
       ],

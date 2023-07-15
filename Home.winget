@@ -16,7 +16,16 @@
 					"PackageIdentifier" : "Inkscape.Inkscape"
 				},
 				{
+					"PackageIdentifier" : "Kobo.Kobo"
+				},
+				{
+					"PackageIdentifier" : "KDE.digikam"
+				},
+				{
 					"PackageIdentifier" : "calibre.calibre"
+				},
+				{
+					"PackageIdentifier" : "Zoom.Zoom"
 				}
 			],
 			"SourceDetails" : 
