@@ -20,7 +20,7 @@
           "PackageIdentifier": "Foxit.FoxitReader"
         },
         {
-          "PackageIdentifier": "GitHub.cli"
+          "PackageIdentifier": "Git.Git"
         },
         {
           "PackageIdentifier": "Glarysoft.GlaryUtilities"
@@ -35,9 +35,6 @@
           "PackageIdentifier": "Microsoft.OneDrive"
         },
         {
-          "PackageIdentifier": "Microsoft.PowerShell"
-        },
-        {
           "PackageIdentifier": "Microsoft.PowerToys"
         },
         {
@@ -45,9 +42,6 @@
         },
         {
           "PackageIdentifier": "Microsoft.WindowsTerminal"
-        },
-        {
-          "PackageIdentifier": "Python.Python.3"
         },
         {
           "PackageIdentifier": "REALiX.HWiNFO"
@@ -70,12 +64,16 @@
           "PackageIdentifier": "9WZDNCRFJ3QK"
         },
         {
+          "Name": "Microsoft Remote Desktop",
+          "PackageIdentifier": "Microsoft.RemoteDesktop_8wekyb3d8bbwe"
+        },
+        {
           "Name": "Sysinternals Suite",
           "PackageIdentifier": "9P7KNL5RWT25"
         },
         {
           "Name": "TreeSize Free",
-          "PackageIdentifier": "9NBLGGH40881"
+          "PackageIdentifier": "XP9M26RSCLNT88"
         }
       ],
       "SourceDetails": {
