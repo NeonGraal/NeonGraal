@@ -24,14 +24,13 @@
 1. Create `\Dev` directory and git clone this repo with `gh repo clone NeonGraal/NeonGraal`
 1. Copy `Powershell_profile.ps1` into `$PROFILE`
 1. Copy `upgrade-all.ps1` and `windows-updates.ps1` into `~`
-1. Copy `struan.omp.json` into `D:\Struan` (or somewhere else and edit the profile from 9.) 
+1. Copy `struan.omp.json` into `~` (or somewhere else and edit `$PROFILE` to match.)
 1. Install the desired `*.winget` packs with `install.ps1 pack.winget`
    - Start with `Basic.winget`
 
 ## WSL Ubuntu
 
 1. Install with root username of `struan`
-2. Copy `struan-sudoer.d` into `/etc/sudoers.d`
-3. Remove `snapd` with `sudo apt purge snapd`
-4. Edit `/etc/update-manager/release-upgrades` and change `Prompt=lts` to be `Prompt=normal`
-5. Run `update-alternatives --config editor` and change editor to be vim
+1. Copy `struan-sudoer` into `/etc/sudoers.d`
+1. Edit `/etc/update-manager/release-upgrades` and change `Prompt=lts` to be `Prompt=normal`
+1. Run `update-alternatives --config editor` and change editor to be vim
