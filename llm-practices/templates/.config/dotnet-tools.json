@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    // --- Required for coverage.ps1 and *-coverage.ps1 scripts ---
+    // Collects code coverage in Cobertura format.
+    // Run: dotnet tool restore  (before using dotnet coverage in scripts)
+    "dotnet-coverage": {
+      "version": "18.8.0",
+      "commands": ["dotnet-coverage"],
+      "rollForward": false
+    },
+    // --- Required for report.ps1 ---
+    // Generates HTML and Markdown coverage reports from Cobertura XML.
+    "dotnet-reportgenerator-globaltool": {
+      "version": "5.5.10",
+      "commands": ["reportgenerator"],
+      "rollForward": false
+    },
+    // --- Required for update.ps1 ---
+    // Checks whether local tool manifest entries are outdated.
+    "dotnet-tools-outdated": {
+      "version": "0.8.0",
+      "commands": ["dotnet-tools-outdated"],
+      "rollForward": false
+    }
+    // --- Optional: add for DocFX documentation repos only ---
+    // "docfx": {
+    //   "version": "2.78.5",
+    //   "commands": ["docfx"],
+    //   "rollForward": false
+    // }
+    // --- Optional: add if using report.ps1 live preview ---
+    // "livereloadserver": {
+    //   "version": "1.4.0",
+    //   "commands": ["LiveReloadServer"],
+    //   "rollForward": false
+    // }
+  }
+}

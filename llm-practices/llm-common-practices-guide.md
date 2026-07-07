@@ -49,6 +49,23 @@ Annotated reference implementations for each script archetype are in
 They document the conventions encoded by each script and are intended as starting
 points when adding a script to a new repository.
 
+### Tool definition templates
+Annotated, copy-ready tooling configuration files are in **[`templates/`](./templates/)**:
+
+| File | Purpose |
+|---|---|
+| `.config/dotnet-tools.json` | dotnet local tool manifest (coverage, reportgenerator, tools-outdated) |
+| `coverage.runsettings` | Coverage scope + attribute exclusions for production assemblies |
+| `tests-coverage.runsettings` | Broader coverage scope including test assemblies |
+| `.prettierrc.yml` | Prettier options (printWidth 150, trailingComma all, etc.) |
+| `.prettierignore` | Exclude build output and Verify snapshots from formatting |
+| `Directory.Build.props` | Solution-wide MSBuild defaults (nullable, analyzers, TreatWarningsAsErrors) |
+| `Directory.Packages.props` | Central Package Management version pins |
+| `.editorconfig` | Editor + build style rules, naming conventions, diagnostic severities |
+| `.globalconfig` | Global C# analyzer/style rules (no file-glob scoping) |
+
+See [`templates/README.md`](./templates/README.md) for the minimal setup steps and file relationship diagram.
+
 ## Repo-family playbooks
 
 ### A) `graphql-plus` (.NET + test/coverage automation)

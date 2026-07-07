@@ -1,0 +1,24 @@
+# .prettierrc.yml
+# Used by: format.ps1 (via `npx prettier`)
+# Scope: all non-C# files (JSON, YAML, Markdown, HTML, TypeScript, CSS, etc.)
+#
+# Key decisions:
+#   printWidth: 150  – matches the max_line_length in .editorconfig; keeps both tools consistent.
+#   tabWidth: 2      – standard across all file types in this ecosystem.
+#   useTabs: false   – spaces everywhere; enforced by .editorconfig too.
+#   trailingComma: all  – avoids diff noise when adding items to multiline arrays/objects.
+#   bracketSameLine: true  – JSX closing > stays on the last prop line rather than its own line.
+#   bracketSpacing: true   – { key: value } not {key: value}.
+#   semi: true       – explicit semicolons in JS/TS.
+#   arrowParens: always  – (x) => not x => ; avoids ambiguity and makes refactoring easier.
+#   endOfLine: auto  – respects the line ending already present; avoids churn on Windows/macOS mixes.
+
+printWidth: 150
+tabWidth: 2
+useTabs: false
+trailingComma: "all"
+bracketSameLine: true
+bracketSpacing: true
+semi: true
+arrowParens: "always"
+endOfLine: "auto"

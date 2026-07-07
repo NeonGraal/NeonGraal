@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  coverage.runsettings
+  Used by: coverage.ps1, unit-coverage.ps1, int-coverage.ps1
+  Purpose: Tell dotnet-coverage which assemblies to instrument and which attributes to exclude.
+
+  Key decisions:
+  - ModulePath Include: scope coverage to YOUR project assemblies only.
+    Replace 'MyProject' with your assembly name prefix.
+    Use the broader wildcard pattern (.*\\MyProject.*\.dll$) to include all sub-assemblies.
+    Use explicit patterns (.*\\MyProject\.Core\.dll$, ...) to exclude test/generated assemblies.
+  - Attributes Exclude: the four standard attributes below suppress noise from
+    generated code, debugger helpers, and explicit exclusion markers.
+  - UseVerifiableInstrumentation / EnableStaticNativeInstrumentation: leave True;
+    these are the recommended settings for modern .NET.
+  - CollectAspDotNet: leave False unless you are coverage-testing an ASP.NET app
+    running under IIS.
+-->
+<RunSettings>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector
+        friendlyName="Code Coverage"
+        uri="datacollector://Microsoft/CodeCoverage/2.0"
+        assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Configuration>
+          <Format>cobertura</Format>
+          <CodeCoverage>
+
+            <ModulePaths>
+              <Include>
+                <!--
+                  Broad pattern: covers every dll whose name starts with MyProject.
+                  Switch to explicit paths if you want to exclude test assemblies
+                  from the default run (see tests-coverage.runsettings for the
+                  inclusive variant).
+                -->
+                <ModulePath>.*\\MyProject.*\.dll$</ModulePath>
+              </Include>
+            </ModulePaths>
+
+            <Attributes>
+              <Exclude>
+                <!-- Don't forget "Attribute" at the end of the name -->
+                <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>
+                <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>
+                <Attribute>^System\.CodeDom\.Compiler\.GeneratedCodeAttribute$</Attribute>
+                <Attribute>^System\.Diagnostics\.CodeAnalysis\.ExcludeFromCodeCoverageAttribute$</Attribute>
+              </Exclude>
+            </Attributes>
+
+            <!-- Recommended values – do not change without a specific reason -->
+            <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
+            <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
+            <CollectFromChildProcesses>True</CollectFromChildProcesses>
+            <CollectAspDotNet>False</CollectAspDotNet>
+            <EnableStaticNativeInstrumentation>True</EnableStaticNativeInstrumentation>
+            <EnableDynamicNativeInstrumentation>True</EnableDynamicNativeInstrumentation>
+            <EnableStaticNativeInstrumentationRestore>True</EnableStaticNativeInstrumentationRestore>
+
+          </CodeCoverage>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>

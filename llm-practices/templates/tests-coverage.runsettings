@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  tests-coverage.runsettings
+  Used by: coverage.ps1 -IncludeTests
+  Purpose: Identical to coverage.runsettings but uses a broader ModulePath
+           pattern that also instruments test assemblies themselves.
+           Useful when measuring coverage of test helpers or shared test utilities.
+
+  The only difference from coverage.runsettings is the ModulePath wildcard:
+    coverage.runsettings        → .*\\MyProject.*\.dll$   (production only, broad)
+    tests-coverage.runsettings  → .*\\MyProject\.[^\\]+$  (all assemblies, incl. tests)
+
+  Switch between them by passing -IncludeTests to coverage.ps1.
+-->
+<RunSettings>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector
+        friendlyName="Code Coverage"
+        uri="datacollector://Microsoft/CodeCoverage/2.0"
+        assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Configuration>
+          <Format>cobertura</Format>
+          <CodeCoverage>
+
+            <ModulePaths>
+              <Include>
+                <!-- Broader: [^\\]+ matches any single path segment, including test projects -->
+                <ModulePath>.*\\MyProject\.[^\\]+$</ModulePath>
+              </Include>
+            </ModulePaths>
+
+            <Attributes>
+              <Exclude>
+                <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>
+                <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>
+                <Attribute>^System\.CodeDom\.Compiler\.GeneratedCodeAttribute$</Attribute>
+                <Attribute>^System\.Diagnostics\.CodeAnalysis\.ExcludeFromCodeCoverageAttribute$</Attribute>
+              </Exclude>
+            </Attributes>
+
+            <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
+            <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
+            <CollectFromChildProcesses>True</CollectFromChildProcesses>
+            <CollectAspDotNet>False</CollectAspDotNet>
+            <EnableStaticNativeInstrumentation>True</EnableStaticNativeInstrumentation>
+            <EnableDynamicNativeInstrumentation>True</EnableDynamicNativeInstrumentation>
+            <EnableStaticNativeInstrumentationRestore>True</EnableStaticNativeInstrumentationRestore>
+
+          </CodeCoverage>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>

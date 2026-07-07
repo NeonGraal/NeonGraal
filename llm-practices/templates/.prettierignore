@@ -1,0 +1,20 @@
+# .prettierignore
+# Tell Prettier which files/directories to skip.
+# Used by: format.ps1 (via `npx prettier -w .` or `-c .`)
+#
+# Key decisions:
+#   bin/ obj/        – compiled output; never format build artifacts.
+#   wwwroot/         – often contains vendored or minified files.
+#   /publish/        – dotnet publish output.
+#   *.verified.json  – Verify snapshot files; these are intentionally raw and
+#                       must not be reformatted or diffs will be meaningless.
+#   coverage.json    – reportgenerator intermediate; not source.
+#
+# Add additional generated directories specific to your project below.
+
+bin/
+obj/
+wwwroot/
+/publish/
+*.verified.json
+coverage.json

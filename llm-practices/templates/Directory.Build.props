@@ -1,0 +1,59 @@
+<Project>
+  <!--
+    Directory.Build.props
+    Applies to: ALL projects in this directory tree (MSBuild SDK-style projects).
+    Purpose: Set build-wide defaults that must be consistent across every project.
+
+    Key decisions:
+      LangVersion=latest         – always use the latest stable C# language version.
+      ImplicitUsings=enable      – reduces boilerplate; System.* namespaces available implicitly.
+      Nullable=enable            – nullability annotations enforced everywhere.
+      EnforceCodeStyleInBuild=true – .editorconfig style rules produce build warnings/errors.
+      AnalysisLevel=latest-all   – enable all roslyn/CA analysis rules at the latest level.
+                                   Use "10.0-all" to pin to a specific SDK if needed.
+      TreatWarningsAsErrors=true – warnings are errors; the build is never "green with warnings".
+      IsPublishable=false        – prevents accidental `dotnet publish` of library projects;
+                                   override to true only in the entry-point project.
+      SatelliteResourceLanguages=en – suppress generation of satellite resource assemblies for
+                                       languages other than English (reduces output noise).
+
+    Global analyzer packages (apply to every project):
+      PolySharp                        – polyfills for modern C# APIs on older target frameworks.
+      Microsoft.CodeAnalysis.Analyzers – Roslyn API-use rules.
+      Microsoft.CodeAnalysis.BannedApiAnalyzers – enforce banned-API list via BannedSymbols.txt.
+
+    Customisation:
+      Replace 'MyProject' in RootNamespace with your actual root namespace.
+      Adjust AnalysisLevel / LangVersion if you need to target specific SDK versions.
+      Remove PolySharp if all target frameworks are .NET 8+.
+  -->
+
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <AnalysisLevel>latest-all</AnalysisLevel>
+    <IsPublishable>false</IsPublishable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RootNamespace>MyProject</RootNamespace>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <!-- Analyzer-only packages: no runtime output, no transitive exposure -->
+  <ItemGroup>
+    <PackageReference Include="PolySharp">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeAnalysis.BannedApiAnalyzers">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
